@@ -10,13 +10,16 @@ body{
     line-height: 1.6;
 }
 
+ 
+
 /* maim */
 .main-container{
     display: grid;
     max-width: 1000px;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 1fr 2fr;
+    min-height: 100vh;
     gap: 40px;
-    padding-top: 40px;
+    padding: 40px;
     margin: auto;
 }
 .sidebar{
@@ -241,3 +244,11 @@ nav a:hover{
     object-fit: cover;
 }
 
+
+
+/* MOBILE VIEW */
+    @media (max-width: 768px) {
+      .main-container {
+        grid-template-columns: 1fr;   /* single column */
+      }
+    }
