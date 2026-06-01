@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    
+    
 </head>
 <body>
     <div class="main-container">
@@ -197,12 +199,21 @@
 
            <!-- contact -->
             <div id="contact">
-                
+                <h2 class="heading">Contact</h2>
+                <div class="line"></div>
+                <form id="contact-form">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
             </div>
 
         </div>
 
     </div>
     
+   <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+   <script src="script.js"></script> 
 </body>
 </html>
