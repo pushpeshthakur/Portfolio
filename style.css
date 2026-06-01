@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0px;
     padding: 0px;
@@ -309,3 +310,259 @@ nav a:hover{
         grid-template-columns: 1fr;  /* single column for projects */
       }
     }
+=======
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: blanchedalmond;
+    color: #ffffff;
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+
+ 
+
+/* maim */
+.main-container{
+    display: grid;
+    max-width: 1000px;
+    grid-template-columns: 1fr 2fr;
+    min-height: 100vh;
+    gap: 40px;
+    padding: 40px;
+    margin: auto;
+}
+.sidebar{
+    height: 90vh;
+    background-color: #231b31;
+    border:1px solid #3a3a3a;
+    border-radius: 16px;
+    padding: 30px;
+}
+.main-content{
+    background-color: #231b31;
+    border: 1px solid #3a3a3a;
+    border-radius: 16px;
+    padding: 30px;
+}
+            /* Profile */
+.profile{
+    text-align: center;
+}
+
+.profile img{
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    border: 1px solid #3a3a3a;
+}
+.profile h2{
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 15px;
+    color: #bff2f2;
+}
+.profile p{
+    background-color: #231b31;
+    padding: 5px;
+    margin-top: 8px;
+    color: #ffbf00;
+    border: 1px solid #342259;
+    border-radius: 6px;
+    display: inline-block;
+    font-size: 0.8rem;
+}
+            /* Contact */
+
+.contact{
+    border-top: 1px solid #3a3a3a;
+    margin: 10px;
+    padding: 10px;
+}
+.lebel{
+    font-weight: 300;
+    font-size: 0.7rem;
+    color: #a0a0a0;
+}
+.value{
+    color: #c0c0c0;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+.email,.phone{
+    margin-bottom: 10px;
+}
+        /* social */
+
+.social{
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #3a3a3a;
+    text-align: center;
+}   
+.social img{
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+    filter: grayscale(1) invert(0.7);
+    transition: filter 0.3s ease;
+} 
+.social img:hover{
+    filter: grayscale(0) invert(0);
+} 
+
+/* main content */
+
+/* navigation */
+
+#navigation{
+    border-bottom: 1px solid #3a3a3a;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+nav{
+    display: flex;
+    justify-content: flex-end ;
+    gap: 20px;
+}
+nav a{
+    text-decoration: none;
+    color: #a0a0a0;
+    font-weight: 400;
+    transition: color 0.3s ease;
+    
+}
+nav a:hover{
+    color: #ffbf00;
+}
+
+/* About me */
+
+.heading{
+    color: #e0e0e0;
+    font-size: 1.5;
+    margin-bottom: 1px;
+}
+.line{
+    background-color: #ffbf00;
+    width: 60px;
+    height: 5px;
+    margin-bottom: 10px;
+}
+.content{
+    text-align: justify;
+    color:#a0a0a0;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+/* Skills */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(100px, 1fr));
+    gap: 30px;
+    margin-bottom: 15px;
+
+}
+.items{
+    padding: 15px;
+    border: 1px solid #3a3a3a;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    margin-top: 10px;
+    text-align: center;
+    transition: transform 0.3s ease , box-shadow 0.3s ease;
+}
+.items img{
+    height: 40px;
+    width: 40px;
+    filter: brightness(0) saturate(100%) invert(65%) sepia(99%) saturate(959%) hue-rotate(357deg) brightness(105%) contrast(109%);
+
+}
+.items h3{
+    font-size: 0.8rem;
+}
+.items:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Education */
+
+#education{
+    margin-top: 20px;
+}
+
+.edtech{
+    position: relative;
+}
+.year{
+    font-size: 0.95rem;
+    color: #a0a0a0;
+    margin-bottom: 5px;
+}
+.degree{
+    font-size: 1.1rem;
+    color: #e0e0e0;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.college{
+    font-style:italic;
+    color: #a0a0a0;
+    margin-bottom: 5px;
+}
+.work{
+    color: #c0c0c0; 
+}
+
+.edufirst,.edusecond,.eduthird{
+    margin-bottom: 25px;
+    position: relative;
+    padding-left: 20px;
+}
+.dot{
+    height: 14px;
+    width: 14px;
+    border: 3px solid #ffbf00;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    z-index: 1;
+}
+.liner{
+    position: absolute;
+    width: 2px;
+    top: 3px;
+    bottom: 0px;
+    border: 2px solid #3a3a3a;
+    left: 5px;
+}
+
+/* Project */
+
+.projecj-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.projects img{
+    height: 170px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+/* MOBILE VIEW */
+    @media (max-width: 768px) {
+      .main-container {
+        grid-template-columns: 1fr;   /* single column */
+      }
+    }
+>>>>>>> origin/main
