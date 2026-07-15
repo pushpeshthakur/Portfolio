@@ -152,7 +152,7 @@ nav a:hover{
 
 .grid-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit , minmax(90px, 1fr));
     gap: 30px;
     margin-bottom: 15px;
 
@@ -342,17 +342,45 @@ textarea.cont-info {
 
 
 /* MOBILE VIEW */
-    @media (max-width: 768px) {
-      .main-container {
-        grid-template-columns: 1fr;   /* single column */
-      }
-      .sidebar {
-        height: auto;                 /* adjust height */
-        position: relative;          /* normal flow */
-        top: 0;                      /* reset top */
-        margin-bottom: 20px;         /* spacing below sidebar */
-      }
-      .project-container {
-        grid-template-columns: 1fr;  /* single column for projects */
-      }
+@media (max-width: 568px) {
+    .main-container {
+        grid-template-columns: 1fr;
+        padding: 15px;
+        gap: 20px;
     }
+
+    .sidebar,
+    .main-content {
+        width: 100%;
+        margin: 0;
+    }
+
+    .sidebar {
+        height: auto;
+        position: relative;
+        top: 0;
+        margin-bottom: 20px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+    #contact-form {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .cont-info {
+        width: 100%;
+    }
+
+    textarea.cont-info {
+        width: 100%;
+        height: 100px;
+    }
+}
